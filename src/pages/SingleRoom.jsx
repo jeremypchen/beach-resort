@@ -49,7 +49,7 @@ export default class SingleRoom extends Component {
       size
     } = room;
 
-    const [mainImg, ...defaultImg] = images;
+    const [, ...defaultImg] = images;
 
     return (
       <>
@@ -63,7 +63,7 @@ export default class SingleRoom extends Component {
         <section className="single-room">
           <div className="single-room-images">
             {defaultImg.map((item, index) => (
-              <img key={index} src={item} />
+              <img key={index} src={item} alt="room-img" />
             ))}
           </div>
           <div className="single-room-info">
